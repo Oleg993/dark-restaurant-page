@@ -1,0 +1,56 @@
+[
+    {
+    "id":"section3",
+    "title":"Featured Meal",
+    "img":"imgs/Featured Meal1.png",
+    "description1":"Served with french fries + drink",
+    "description2": "Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more..." ,
+    "star": "&#9734",
+    "btn": "ORDER"
+},
+{
+    "id":"section3",
+    "title":"Featured Meal",
+    "img":"imgs/Featured Meal2.png",
+    "description1":"Served with french fries + drink",
+    "description2": "Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more..." ,
+    "star": "&#9734",
+    "btn": "ORDER"
+},
+{
+    "id":"section3",
+    "title":"Featured Meal",
+    "img":"imgs/Featured Meal3.png",
+    "description1":"Served with french fries + drink",
+    "description2": "Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more..." ,
+    "star": "&#9734",
+    "btn": "ORDER"
+},
+{
+    "id":"section3",
+    "title":"Featured Meal",
+    "img":"imgs/Featured Meal4.png",
+    "description1":"Served with french fries + drink",
+    "description2": "Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more..." ,
+    "star": "&#9734",
+    "btn": "ORDER"
+},
+{
+    "id":"section3",
+    "title":"Featured Meal",
+    "img":"imgs/Featured Meal5.png",
+    "description1":"Served with french fries + drink",
+    "description2": "Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more..." ,
+    "star": "&#9734",
+    "btn": "ORDER"
+},
+{
+    "id":"section3",
+    "title":"Featured Meal",
+    "img":"imgs/Featured Meal6.png",
+    "description1":"Served with french fries + drink",
+    "description2": "Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more..." ,
+    "star": "&#9734",
+    "btn": "ORDER"
+}
+]

@@ -1,5 +1,6 @@
 @import '/css/reset.css';
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --white: #ffffff;
@@ -10,12 +11,13 @@
 }
 body {
   overflow-x: hidden;
-  font-family: 'Helvetica Neue', sans-serif;
+  /* font-family: 'Helvetica Neue', sans-serif;
   font-family: 'Helvetica 25 UltraLight', sans-serif;
   font-family: 'Helvetica 35 Thin', sans-serif;
   font-family: 'Helvetica 45 Light', sans-serif;
   font-family: 'Helvetica 55 Roman', sans-serif;
-  font-family: 'Helvetica 65 Medium', sans-serif;
+  font-family: 'Helvetica 65 Medium', sans-serif; */
+  font-family: 'Poppins', sans-serif;
 }
 .header-bg {
   background: url(/imgs/background.png);
@@ -101,6 +103,9 @@ body {
 }
 
 .btn-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--green);
   max-width: 220px;
   width: 100%;
@@ -296,7 +301,7 @@ body {
 }
 
 .second-page-text h3 {
-  font-size: 38px;
+  font-size: 36px;
   text-align: center;
   letter-spacing: 0.2em;
   color: var(--grayB);
@@ -389,6 +394,7 @@ body {
   flex-direction: column;
   text-align: center;
   position: relative;
+  padding-bottom: 100px;
 }
 
 .third-page-text {
@@ -399,7 +405,7 @@ body {
 
 .third-page-text h2 {
   position: absolute;
-  top: 105px;
+  top: 110px;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -435,22 +441,52 @@ body {
 
 .third-page-items {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   color: white;
 }
 
 .item-third-page {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 330px;
   width: 100%;
-  background: #cab8b8;
   border-radius: 6px;
+  background: #252525;
+  margin: 15px 0;
 }
+
+/*Third page item-text*/
+
 .item-third-page-text {
-  padding: 24px;
   display: flex;
   flex-direction: column;
+  padding: 24px;
+  text-align: start;
 }
+.item-third-page-text h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 30px;
+  color: var(--grayB);
+}
+
+.item-third-page-text p {
+  color: var(--gray);
+}
+
+.third-page-p-1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  margin-bottom: 20px;
+}
+.third-page-p-2 {
+  margin-bottom: 26px;
+}
+
+/*Third page item-ranking*/
 
 .item-third-ranking {
   display: inline-flex;
@@ -488,6 +524,303 @@ body {
   max-width: 100px;
   width: 100%;
   height: 40px;
-  background-color: var(--green);
-  border-radius: 20px;
+
+  background: #262626;
+  border: 2px solid #303030;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 40px;
+
+  text-align: center;
+  letter-spacing: 0.2em;
+
+  color: var(--grayB);
+}
+
+.item-third-btn:hover {
+  background-color: rgb(75, 75, 75);
+  color: var(--green);
+  font-size: 10.2px;
+  transition: 0.3 ease-in;
+}
+
+/*Fourth page*/
+
+.fourth-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.fourth-page-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fourth-page-text h2 {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 150px;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  color: #30303086;
+}
+
+.fourth-page-text h3 {
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: var(--grayB);
+  position: relative;
+  margin: 90px 0;
+}
+
+.fourth-page-text h3::after {
+  content: '';
+  background: var(--green);
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  top: 80px;
+  left: 40%;
+}
+
+/*Fourth page - items*/
+
+.fourth-page-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-fourth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 350px;
+  width: 100%;
+}
+
+.item-fourth-page-top {
+  display: flex;
+  color: #ffffff;
+}
+
+.item-fourth-page-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #34c759;
+  margin-left: 24px;
+  text-align: left;
+}
+.item-fourth-page-text h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.item-fourth-page-text p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  color: var(--gray);
+}
+
+.item-fourth-page-top img {
+  margin: 0 24px 24px 0;
+}
+
+.item-fourth-page-imgs {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/*Fifth page*/
+.fifth-page {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  background-color: #34c759;
+}
+
+.fifth-page-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fifth-page-text h2 {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 150px;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  color: #30303086;
+}
+
+.fifth-page-text h3 {
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: var(--grayB);
+  position: relative;
+  margin: 90px 0;
+}
+
+.fifth-page-text h3::after {
+  content: '';
+  background: var(--green);
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  top: 80px;
+  left: 40%;
+}
+
+/*Fifth page-items*/
+
+.fifth-page-items {
+  display: flex;
+  margin-bottom: 100px;
+}
+.fifth-page-items-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 30px;
+}
+
+.main-item-forth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(/imgs/recipe\ main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 540px;
+  height: 510px;
+  flex-basis: 50%;
+  border-radius: 6px;
+  margin-right: 30px;
+  font-weight: 400;
+}
+.main-item-forth p {
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.fifth-recipe {
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--white);
+  max-width: 410px;
+  width: 100%;
+  padding: 0px 25px;
+  margin: 25px 0 45px 0;
+}
+
+.fifth-recipe:hover {
+  text-decoration: underline;
+}
+
+.item-fifth-feedback {
+  display: flex;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 30px;
+  gap: 30px;
+  margin-top: 60px;
+}
+.item-fifth-feedback .views {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.item-fifth-feedback .reviews {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.item-fifth-feedback img {
+  max-width: 24px;
+  width: 100%;
+  max-height: 24px;
+  height: auto;
+}
+.item-fifth-feedback a {
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--white);
+}
+.item-fifth-feedback a:hover {
+  color: var(--gray);
+}
+
+.fifth-recipe-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  padding: 5px 16px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 25px;
+  letter-spacing: 1.25px;
+  background: #00000071;
+  border-radius: 6px;
+  margin-bottom: 65px;
+}
+.fifth-recipe-link:hover {
+  background-color: rgb(75, 75, 75);
+  color: var(--green);
+  font-size: 10.2px;
+  transition: 0.3 ease-in;
+}
+
+.fifth-img {
+  max-width: 540px;
+  max-height: 150px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+}
+
+.item1-fourth-page {
+  background: url(/imgs/recipe\ lunch.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.item2-fourth-page {
+  background: url(/imgs/recipe\ dinner.png);
+  background-size: cover;
+  background-position: center;
+}
+.item3-fourth-page {
+  background: url(/imgs/Sweets\ _\ KRAUTKOPF.jpeg);
+  background-size: cover;
+  background-position: center;
 }
